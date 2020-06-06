@@ -1,0 +1,59 @@
+@import 'setup';
+@import 'variables';
+
+// Default Styling & Stripping
+html {
+    font-size: 62.5%;
+}
+
+body { 
+    @include font-size(16);
+    line-height: 1.6;
+    font-family: $body-font;
+    background-color: $light-green;
+}
+  
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+a,
+p,
+ul,
+li,
+div,
+section,
+input,
+button,
+form {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+ul,
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+    color: $black;
+}
+
+
+.wrapper {
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+
+h1 {
+    @include font-size(30);
+    font-family: $heading-font;   
+}

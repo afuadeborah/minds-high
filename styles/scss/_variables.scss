@@ -1,0 +1,43 @@
+// Fonts
+$body-font: 'Fira Sans', sans-serif;
+$heading-font: 'Arvo', serif;
+// font-family: 'Arvo', serif;
+
+// font-family: 'Fira Sans', sans-serif;
+
+@mixin font-size($sizeValue) {
+    font-size: ($sizeValue/10) * 1rem;
+}
+
+
+// Colours
+$black: #0B0B0B;
+$white: #FFFFFF;
+
+$light-green: #92E2B3;
+$pastel-green:  #BFEF88;
+$dark-green: #063B00;
+
+$pastel-orange: #FCC772;
+$dark-orange: #F05F00;
+
+
+// Media Queries
+@mixin desktop {
+    @media (max-width: 980px){
+        @content;
+    }
+}
+
+
+@mixin mobile-tablet {
+    @media (max-width: 780px){
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 500px){
+        @content;
+    }
+}
