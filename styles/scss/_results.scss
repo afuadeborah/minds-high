@@ -1,0 +1,44 @@
+.strain-container,
+.strain-container .result-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+// Result  Cards
+.strain-container {
+    flex-wrap: wrap;
+    align-items: center;
+
+    .strain-card {
+        flex-basis: 45%;
+        height: 100%;
+        margin: 1em;
+        padding: 2em 1.2em;
+        border-radius: 7px;
+        display: none;
+
+    }
+
+    .strain-card.active {
+        opacity: 1;
+        display: block;
+    }
+
+    .result-info .result-race {
+        font-weight: bolder;
+        letter-spacing: 1.2px;
+    }
+
+    .result-info .periodic {
+        font-size: 2.75rem;
+        letter-spacing: 2px;
+    }
+
+    
+    .strain-label {
+        font-weight: bold;
+        font-size: 2.2rem;
+        margin: 0.5em auto;
+    }
+}

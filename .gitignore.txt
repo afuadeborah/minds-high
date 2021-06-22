@@ -1,6 +1,7 @@
-node modules
+node_modules
 .psd
 .vscode
 .DS_Store
 .pdf
 .zip
+.idea

@@ -1,9 +1,17 @@
 // Fonts
-$body-font: 'Fira Sans', sans-serif;
-$heading-font: 'Arvo', serif;
-// font-family: 'Arvo', serif;
+@font-face {
+    font-family: 'Gotham Bold';
+    src: url('/assets/Gotham-Bold.otf');
+}
 
-// font-family: 'Fira Sans', sans-serif;
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('/assets/Gotham\ Book\ Regular.otf');
+}
+
+$header-font: 'Gotham Bold', 'sans-serif';
+$body-font: 'Gotham Book', 'sans-serif';
+
 
 @mixin font-size($sizeValue) {
     font-size: ($sizeValue/10) * 1rem;
@@ -14,17 +22,19 @@ $heading-font: 'Arvo', serif;
 $black: #0B0B0B;
 $white: #FFFFFF;
 
-$light-green: #92E2B3;
-$pastel-green:  #BFEF88;
-$dark-green: #063B00;
+$orange: #FCC772;
+$yellow: #FDDF62;
+$blue: #80DEEA;
+$green: #BFEF88;
+$green2:#98DB92;
 
-$pastel-orange: #FCC772;
-$dark-orange: #F05F00;
+
+
 
 
 // Media Queries
 @mixin desktop {
-    @media (max-width: 980px){
+    @media (max-width: 900px){
         @content;
     }
 }
@@ -35,6 +45,7 @@ $dark-orange: #F05F00;
         @content;
     }
 }
+
 
 @mixin mobile {
     @media (max-width: 500px){

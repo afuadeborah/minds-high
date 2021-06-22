@@ -1,5 +1,7 @@
 @import 'setup';
 @import 'variables';
+@import 'main';
+@import 'results';
 
 // Default Styling & Stripping
 html {
@@ -10,7 +12,9 @@ body {
     @include font-size(16);
     line-height: 1.6;
     font-family: $body-font;
-    background-color: $light-green;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    overflow-x: hidden;
 }
   
 img {
@@ -44,16 +48,191 @@ a {
     color: $black;
 }
 
-
 .wrapper {
     max-width: 1280px;
     width: 90%;
     margin: 0 auto;
+}
+
+.spacer {
+    height: 10vh;
+}
+
+
+// Main
+h1,
+h2,
+h3,
+.strain-container .result-info .result-race,
+.strain-container .strain-label,
+.back-to-top {
+    text-transform: uppercase;
+}
+
+h1 {
+    @include font-size(45);  
+}
+
+h1,
+h2 span,
+h3 {
+    font-family: $header-font;
+}
+
+.title span {
+    text-align: left;
+}
+
+h2,
+h3,
+.select-effect p,
+.race-btn-container .race-btn {
+    text-align: center;
+}
+
+h2 {
+    margin: 1em;
+}
+
+
+h3 {
+    @include font-size(30);
+    margin: 1.5em auto;
+}
+
+
+header {
+    height: 100%;
+    padding: 4em 1em;
+}
+
+
+.sativa {
+    background-color: $orange;
+}
+
+
+.hybrid {
+    background-color: $green;
+}
+
+
+.indica {
+    background-color: $blue;
+}
+
+header,
+footer {
+    background-color: $green2;
+}
+
+.select-effect .effect-btn-container .effect-btn,
+.race-btn-container .race-btn,
+.strain-container .strain-card,
+.back-to-top {
+    box-shadow: 5px 5px 5px 0px #DBD7DB;
+}
+
+
+// Media Queries
+@include desktop {
+    .race-btn-container .race-btn {
+        flex-basis: 90%;
+        margin: 0.5em auto;
+    
+    }
+}
+
+@include mobile-tablet {
+
+    .race-btn-container .race-btn {
+        flex-basis: 90%;
+        margin: 0.5em auto;
+    }
+    
+    .select-race {
+        margin: unset;
+    }
+    
+    .select-effect .effect-btn-container .effect-btn {
+        @include font-size(17);
+        flex-basis: 40%; 
+        margin: 0.8em 1em;
+    }
+
+    .strain-container .strain-card {
+        flex-basis: 100%;
+    }
+
+    h3 {
+        @include font-size(35);
+    }
+  
 
 }
 
 
-h1 {
-    @include font-size(30);
-    font-family: $heading-font;   
+
+@include mobile {
+    header {
+        text-align: center;
+    }
+
+    h1 {
+        @include font-size(39);
+        font-size: 3.9rem;
+        text-align: left;
+        flex-basis: 40%;
+    }
+
+    h2,
+    header span,
+    .select-effect .effect-btn-container .effect-btn {
+        @include font-size(15);
+    }
+
+    .leaf-container {
+        margin-bottom: 0.4em;
+        margin-left: 0.7em;
+        flex-basis: 20%;
+    }
+
+    .select-effect .effect-btn-container .effect-btn {
+        flex-basis: 43%;
+        margin: 0.7em 0.1em;
+        padding: 0.9em;
+    }
+    
+    .race-btn-container .race-btn {
+        padding: 1.5em;
+    }
+
+    // Results
+    .strain-result .wrapper {
+        width: 95%;
+    }
+
+    h3 {
+        @include font-size(28);
+        margin: 1em auto;
+    }
+
+    .strain-container .strain-label {
+        @include font-size(18);
+    }
+
+    .effect-con p,
+    .contact p {
+        @include font-size(14);
+    }
+
+    .back-to-top {
+        @include font-size(16);
+        width: 80%;
+    }
+
+    // Footer
+    .contact p {
+        text-align: center;
+    }
 }

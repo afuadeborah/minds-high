@@ -9,33 +9,213 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./leaf-favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./leaf-favicon/favicon-16x16.png">
     <link rel="manifest" href="./leaf-favicon/site.webmanifest">
+
     <!-- Icons -->
+    <script src="https://kit.fontawesome.com/813177f008.js" crossorigin="anonymous"></script>
+
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Fira+Sans:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Fira+Sans:wght@300&display=swap" rel="stylesheet"> 
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
 
-    <header></header>
+    <header>
+        <div class="wrapper">
+
+            <div class="title">
+                <div class="title-container">
+                    <h1>Mind's High</h1>
+                    <div class="leaf-container">
+                        <img src="./assets/cannabis.svg" alt="illustrated marijuana leaf">
+                        <!-- Icons made by <a href="http://www.freepik.com/" -->
+                    </div>
+                </div>
+                <span>Discover your new favourite strain</span>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="spacer"></div>
 
     <main>
-        <h1>Mind's High</h1>
+        <div class="wrapper">
+            <section class="select-race">
+                <div class="wrapper">
+
+                    <h2>Select a <span>type</span></h2>
+        
+                    <div class="race-btn-container">
+    
+                        <button class="race-btn sativa" id="sativa" value="sativa" tabindex="0">Sativa</button>
+                        <button class="race-btn indica" id="indica" value="indica" tabindex="0">Indica</button>
+                        <button class="race-btn hybrid" id="hybrid" value="hybrid" tabindex="0">Hybrid</button>
+    
+                    </div>
+
+                </div>
+            </section>
+
+            <div class="spacer"></div>
+
+            <section class="select-effect">
+                <div class="wrapper">
+
+                    <h2>How do you want to <span>feel</span>?</h2>
+
+                    <form>
+    
+                        <div class="effect-btn-container">
+
+                            <label class="effect-btn" for="relaxed" tabindex="0">Relaxed</label>
+                            <input type="checkbox" name="fx-btn" id="relaxed" value="relaxed"/>
+    
+                            <label class="effect-btn" for="hungry" tabindex="0">Hungry</label>
+                            <input type="checkbox" name="fx-btn" id="hungry" value="hungry"/>
+    
+                            <label class="effect-btn" for="euphoric" tabindex="0">Euphoric</label>
+                            <input type="checkbox" name="fx-btn" id="euphoric" value="euphoric"/>
+    
+    
+                            <label class="effect-btn" for="happy" tabindex="0">Happy</label>
+                            <input type="checkbox" name="fx-btn" id="happy" value="happy"/>
+    
+    
+                            <label class="effect-btn" for="creative" tabindex="0">Creative</label>
+                            <input type="checkbox" name="fx-btn" id="creative" value="creative"/>
+    
+    
+                            <label class="effect-btn" for="energetic" tabindex="0">Energetic</label>
+                            <input type="checkbox" name="fx-btn" id="energetic" value="energetic"/>
+    
+    
+                            <label class="effect-btn" for="talkative" tabindex="0">Talkative</label>
+                            <input type="checkbox" name="fx-btn" id="talkative" value="talkative"/>
+    
+    
+                            <label class="effect-btn" for="uplifted" tabindex="0">Uplifted</label>
+                            <input type="checkbox" name="fx-btn" id="uplifted" value="uplifted"/>
+    
+    
+                            <label class="effect-btn" for="tingly" tabindex="0">Tingly</label>
+                            <input type="checkbox" name="fx-btn" id="tingly" value="tingly"/>
+    
+    
+                            <label class="effect-btn" for="sleepy" tabindex="0">Sleepy</label>
+                            <input type="checkbox" name="fx-btn" id="sleepy" value="sleepy"/>
+    
+    
+                            <label class="effect-btn" for="focused" tabindex="0">Focused</label>
+                            <input type="checkbox" name="fx-btn" id="focused" value="focused"/>
+    
+    
+                            <label class="effect-btn" for="giggly" tabindex="0">Giggly</label>
+                            <input type="checkbox" name="fx-btn" id="giggly" value="giggly"/>
+    
+    
+                            <label class="effect-btn" for="aroused" tabindex="0">Aroused</label>
+                            <input type="checkbox" name="fx-btn" id="aroused" value="aroused"/>
+    
+                        </div>
+    
+                    </form>
+
+                </div>
+            </section>
+
+            <div class="spacer"></div>
+
+            <section class="strain-result">
+                <div class="wrapper">
+                    <h2>You Should Try</h2>
+                    <div class="strain-container">
+                        <!-- Dynamically add in strains -->
+                    </div>
+
+                </div>
+            </section>
+
+            <div class="spacer"></div>
+
+            <section class="restart">
+                <div class="wrapper">
+                    <a class="back-to-top"
+                    tabindex="0" id="restart">Start Over</a>
+                </div>
+            </section>
+
+        </div>
     </main>
 
-    <footer></footer>
+    <div class="spacer"></div>
 
-    
+    <footer>
+        <div class="wrapper">
+            <div class="contact">
+                <ul class="socials"> 
+                    <li tabIndex="0">
+                        <a href="https://github.com/afuadeborah"
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        aria-hidden="true"
+                        title= "Go to Afua's Github">
+                            <span class="fab fa-github"></span>
+                            
+                        </a>
+                    </li>
+        
+                    <li tabIndex="0">
+                        <a href="https://www.linkedin.com/in/meet-afua-frimpong/"
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        aria-hidden="true"
+                        title= "Afua's LinkedIn">
+                            <span class="fab fa-linkedin"></span>
+                        </a>
+                    </li>
+        
+                    <li tabIndex="0">
+                        <a href="https://twitter.com/afuadeborah_"
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        aria-hidden="true"
+                        title="Go to Afua's Twitter">
+                            <span class="fab fa-twitter"></span>
+                        </a>
+                    </li>
+        
+                    <li tabIndex="0">
+                        <a href="https://medium.com/@afuafrimpong4"
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        aria-hidden="true"
+                        title="Go to Afua's blog on Medium">
+                            <span class="fab fa-medium-m"></span>
+                        </a>
+                    </li>
+                </ul> 
+                <a href="http://www.afuadeborahcodes.com/"
+                className="footer-link"
+                target="_blank" 
+                rel="noopener noreferrer" 
+                tabIndex="0"
+                aria-hidden="true"
+                title="afuadeborahcodes.com" 
+                alt="Go to Afua's page.">
+                    <p>Designed by Afua Deborah © 2020</p>
+                </a>
 
-
-
-
-
-
+            </div>
+        </div>
+    </footer>
 
 
     <!-- Scripts -->
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+
+
     <script src="./script.js"></script>
 
 </body>

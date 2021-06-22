@@ -165,6 +165,206 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Gotham Bold';
+  src: url("/assets/Gotham-Bold.otf");
+}
+
+@font-face {
+  font-family: 'Gotham Book';
+  src: url("/assets/Gotham Book Regular.otf");
+}
+
+.title-container,
+.title,
+.leaf-container,
+.race-btn-container,
+.select-effect .effect-btn-container,
+.select-effect .effect-btn-container .effect-btn,
+.back-to-top,
+.contact,
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.title,
+.contact {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.race-btn-container,
+.select-effect .effect-btn-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.title-container,
+.title,
+.leaf-container,
+.select-effect .effect-btn-container,
+.select-effect .effect-btn-container .effect-btn,
+.back-to-top,
+.contact {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.select-effect .effect-btn-container .effect-btn,
+.back-to-top {
+  cursor: pointer;
+}
+
+.leaf-container {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+  margin-left: 1.25em;
+  margin-bottom: 1em;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+.select-race {
+  margin: 7% auto 10%;
+}
+
+.race-btn-container {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.race-btn-container .race-btn {
+  font-size: 1.8rem;
+  padding: 2em 5em;
+  letter-spacing: 0.7px;
+  border-radius: 5px;
+}
+
+h2 span {
+  font-style: italic;
+}
+
+.select-effect .effect-btn-container {
+  height: 90%;
+}
+
+.select-effect .effect-btn-container .effect-btn {
+  padding: 1.75em 2em;
+  background-color: #FDDF62;
+  letter-spacing: 1.5px;
+  font-weight: bolder;
+  border-radius: 5px;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  margin: 0.8em 0.3em;
+}
+
+.select-effect .effect-btn-container input {
+  opacity: 0;
+}
+
+.back-to-top {
+  font-size: 1.8rem;
+  font-family: "Gotham Bold", "sans-serif";
+  padding: 0.8em 1em;
+  background-color: #98DB92;
+  border-radius: 3px;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.back-to-top:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+footer {
+  padding: 1em;
+}
+
+.contact {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .socials {
+  margin: 1em auto;
+}
+
+.contact .socials li {
+  margin: auto 1em;
+}
+
+.contact span {
+  font-size: 2.5rem;
+}
+
+.contact p {
+  text-transform: uppercase;
+  border-top: 0.3px solid #0B0B0B;
+  padding-top: 1em;
+}
+
+.strain-container,
+.strain-container .result-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.strain-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.strain-container .strain-card {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  height: 100%;
+  margin: 1em;
+  padding: 2em 1.2em;
+  border-radius: 7px;
+  display: none;
+}
+
+.strain-container .strain-card.active {
+  opacity: 1;
+  display: block;
+}
+
+.strain-container .result-info .result-race {
+  font-weight: bolder;
+  letter-spacing: 1.2px;
+}
+
+.strain-container .result-info .periodic {
+  font-size: 2.75rem;
+  letter-spacing: 2px;
+}
+
+.strain-container .strain-label {
+  font-weight: bold;
+  font-size: 2.2rem;
+  margin: 0.5em auto;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -172,8 +372,10 @@ html {
 body {
   font-size: 1.6rem;
   line-height: 1.6;
-  font-family: "Fira Sans", sans-serif;
-  background-color: #92E2B3;
+  font-family: "Gotham Book", "sans-serif";
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  overflow-x: hidden;
 }
 
 img {
@@ -213,7 +415,161 @@ a {
   margin: 0 auto;
 }
 
+.spacer {
+  height: 10vh;
+}
+
+h1,
+h2,
+h3,
+.strain-container .result-info .result-race,
+.strain-container .strain-label,
+.back-to-top {
+  text-transform: uppercase;
+}
+
 h1 {
+  font-size: 4.5rem;
+}
+
+h1,
+h2 span,
+h3 {
+  font-family: "Gotham Bold", "sans-serif";
+}
+
+.title span {
+  text-align: left;
+}
+
+h2,
+h3,
+.select-effect p,
+.race-btn-container .race-btn {
+  text-align: center;
+}
+
+h2 {
+  margin: 1em;
+}
+
+h3 {
   font-size: 3rem;
-  font-family: "Arvo", serif;
+  margin: 1.5em auto;
+}
+
+header {
+  height: 100%;
+  padding: 4em 1em;
+}
+
+.sativa {
+  background-color: #FCC772;
+}
+
+.hybrid {
+  background-color: #BFEF88;
+}
+
+.indica {
+  background-color: #80DEEA;
+}
+
+header,
+footer {
+  background-color: #98DB92;
+}
+
+.select-effect .effect-btn-container .effect-btn,
+.race-btn-container .race-btn,
+.strain-container .strain-card,
+.back-to-top {
+  -webkit-box-shadow: 5px 5px 5px 0px #DBD7DB;
+          box-shadow: 5px 5px 5px 0px #DBD7DB;
+}
+
+@media (max-width: 900px) {
+  .race-btn-container .race-btn {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+    margin: 0.5em auto;
+  }
+}
+
+@media (max-width: 780px) {
+  .race-btn-container .race-btn {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+    margin: 0.5em auto;
+  }
+  .select-race {
+    margin: unset;
+  }
+  .select-effect .effect-btn-container .effect-btn {
+    font-size: 1.7rem;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    margin: 0.8em 1em;
+  }
+  .strain-container .strain-card {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  h3 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    text-align: center;
+  }
+  h1 {
+    font-size: 3.9rem;
+    font-size: 3.9rem;
+    text-align: left;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+  h2,
+  header span,
+  .select-effect .effect-btn-container .effect-btn {
+    font-size: 1.5rem;
+  }
+  .leaf-container {
+    margin-bottom: 0.4em;
+    margin-left: 0.7em;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+  .select-effect .effect-btn-container .effect-btn {
+    -ms-flex-preferred-size: 43%;
+        flex-basis: 43%;
+    margin: 0.7em 0.1em;
+    padding: 0.9em;
+  }
+  .race-btn-container .race-btn {
+    padding: 1.5em;
+  }
+  .strain-result .wrapper {
+    width: 95%;
+  }
+  h3 {
+    font-size: 2.8rem;
+    margin: 1em auto;
+  }
+  .strain-container .strain-label {
+    font-size: 1.8rem;
+  }
+  .effect-con p,
+  .contact p {
+    font-size: 1.4rem;
+  }
+  .back-to-top {
+    font-size: 1.6rem;
+    width: 80%;
+  }
+  .contact p {
+    text-align: center;
+  }
 }
